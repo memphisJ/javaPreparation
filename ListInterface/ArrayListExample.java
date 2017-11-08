@@ -53,8 +53,8 @@ public class ArrayListExample {
     String resp = studentsList.contains("Ted")?"Ted is in the List"+ "\n":"Ted is not in the List"+ "\n";
     System.out.println(resp);
 
-    //Remove Ted form the ArrayList
-    System.out.println("Remove Ted from the list");
+    //Remove Ted form the ArrayList giving the position of Ted
+    System.out.println("Remove Ted from the list giving the postion of Ted");
     studentsList.remove(studentsList.indexOf("Ted"));
     resp = studentsList.contains("Ted")?"Ted is in the List"+ "\n":"Ted is not in the List now."+ "\n";
     System.out.println(resp);
@@ -68,6 +68,6 @@ public class ArrayListExample {
     System.out.println("Clear the ArrayList using clar() method.");
     studentsList.clear();
     size = studentsList.size();
-    System.out.println("The size of the ArrayList Afther using clear method is: " + size);
+    System.out.println("The size of the ArrayList afther using clear method is: " + size);
   }
 }

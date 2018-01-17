@@ -1,6 +1,8 @@
+import java.util.*;
+
 public class VectorExample{
   static public void main(String...args){
-    List<String> fruitsVector = new Vector<String>(5);
+    Vector<String> fruitsVector = new Vector<String>(5);
 
     fruitsVector.addElement("Apple");
     fruitsVector.addElement("Orange");
@@ -8,8 +10,9 @@ public class VectorExample{
     fruitsVector.addElement("Fig");
     fruitsVector.addElement("Apple");
 
-    while(fruitsVector.hasMoreElements()) {
-      System.out.println(fruitsVector.nextElement());
+    Enumeration em = fruitsVector.elements();
+    while(em.hasMoreElements()) {
+      System.out.println(em.nextElement());
     }
   }
 }
